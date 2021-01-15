@@ -39,12 +39,5 @@ class UserController extends Controller
             return response()->json(['token' => $token]);
         }
     }
-    public function refresh() {
-        try {
-            $token = auth()->refresh();
-        } catch (\Tymon\JWTAuth\Exceptions\TokenInvalidException $e) {
-            return response()->json(['error' => true, 'message' => $e->getMessage()]);
-        }
-        return response()->json(['token' => $token]);
-    }
+
 }

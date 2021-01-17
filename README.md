@@ -2,5 +2,5 @@
 
 
 ## To install the required libraries use this code
-### `composer update`
+### `composer install`
 

@@ -44,7 +44,7 @@ class ProductController extends Controller
 			   Gallery::insertData($request->file('galleries'),$product->attributesToArray()['id']);
 
 
-				DB::commit();
+				
 			   return response()->json('Məhsul əlavə olundu',201);
 
         }
